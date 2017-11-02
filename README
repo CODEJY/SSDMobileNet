@@ -17,6 +17,6 @@ object_detection:ssd-mobilenet整个框架代码文件夹
 	-exporter.py:为export_inference_graph.py提供工具
 	-object_detection_tutorial.ipynb:模型固化后的应用，输入一张图，输出检测后的图
 	-create_pascal_tf_record.py:将VOC格式数据集转换为tfrecord格式的脚本文件
-	-createTXT:构建完整的VOC格式数据集，基于VOC数据集Annotations文件夹的xml格式文件，生成所需的txt文件，包括test.txt,train.txt.trainval.txt,val.txt,用于create_pascal_tf_record.py
+	-createTXT.py:构建完整的VOC格式数据集，基于VOC数据集Annotations文件夹的xml格式文件，生成所需的txt文件，包括test.txt,train.txt.trainval.txt,val.txt,用于create_pascal_tf_record.py
 	
 slim:依赖库，ssd-mobilenet是基于tensorflow-slim实现的
