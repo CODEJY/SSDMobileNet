@@ -11,31 +11,31 @@ SSD-MobileNet
 
 文件树
 ---
->object_detection: ssd-mobilenet整个框架代码文件夹
->>CTNDATA: Pascal VOC格式的数据集，包括训练、评估
->>test_images: 测试固化后的模型(.pb文件)所用的测试图片
->>anchor_generators: 在多个cnn layer生成anchor
->>box_coders: 计算预测框的位置
->>checkpoints: 预训练模型的checkpoints，此模型基于coco数据集进行的fine-tune
->>data: .pbtxt文件，用于配置检测出的对象的id与name
->>eval_dir: 用于存储执行eval.py评估模型后生成的tensorboard文件
->>models: 构建ssd-mobilenet神经网络层的代码文件
->>TFRecord: 存储.record文件，由VOC格式数据集转换得到
->>train: 存储执行train.py后生成的checkpoints以及tensorboard文件
->>train.py: 执行训练
->>trainer.py: 为train.py提供工具,由train.py调用
->>ssd_mobilenet_v1_coco.config: pipeline配置文件，num_classes、train、eval等相关参数配置
->>eval.py: 评估模型
->>eval_util.py: 为eval.py提供工具，由eval.py调用
->>evaluator.py: 为eval.py提供工具，由eval.py调用
->>export_inference_graph.py: 生成.pb文件,用于测试或移植客户端
->>export_model: 存储export_inference_graph.py生成的.pb文件
->>exporter.py: 为export_inference_graph.py提供工具
->>object_detection_tutorial.ipynb: 读取pb文件，测试固化后的模型。输入一个或多个图片，输出检测后的图片
->>create_pascal_tf_record.py: 将VOC格式数据集转换为tfrecord格式的脚本文件
->>createTXT.py: 构建完整的VOC格式数据集，基于VOC数据集Annotations文件夹的xml格式文件，生成所需的txt文件，包括test.txt,train.txt.trainval.txt,val.txt,用于create_pascal_tf_record.py
->>random_horizontal_flip.py: 对图片进行水平镜像处理，用于丰富测试数据
->slim: 依赖库，ssd-mobilenet是基于tensorflow-slim实现的
+> object_detection: ssd-mobilenet整个框架代码文件夹
+>> CTNDATA: Pascal VOC格式的数据集，包括训练、评估
+>> test_images: 测试固化后的模型(.pb文件)所用的测试图片
+>> anchor_generators: 在多个cnn layer生成anchor
+>> box_coders: 计算预测框的位置
+>> checkpoints: 预训练模型的checkpoints，此模型基于coco数据集进行的fine-tune
+>> data: .pbtxt文件，用于配置检测出的对象的id与name
+>> eval_dir: 用于存储执行eval.py评估模型后生成的tensorboard文件
+>> models: 构建ssd-mobilenet神经网络层的代码文件
+>> TFRecord: 存储.record文件，由VOC格式数据集转换得到
+>> train: 存储执行train.py后生成的checkpoints以及tensorboard文件
+>> train.py: 执行训练
+>> trainer.py: 为train.py提供工具,由train.py调用
+>> ssd_mobilenet_v1_coco.config: pipeline配置文件，num_classes、train、eval等相关参数配置
+>> eval.py: 评估模型
+>> eval_util.py: 为eval.py提供工具，由eval.py调用
+>> evaluator.py: 为eval.py提供工具，由eval.py调用
+>> export_inference_graph.py: 生成.pb文件,用于测试或移植客户端
+>> export_model: 存储export_inference_graph.py生成的.pb文件
+>> exporter.py: 为export_inference_graph.py提供工具
+>> object_detection_tutorial.ipynb: 读取pb文件，测试固化后的模型。输入一个或多个图片，输出检测后的图片
+>> create_pascal_tf_record.py: 将VOC格式数据集转换为tfrecord格式的脚本文件
+>> createTXT.py: 构建完整的VOC格式数据集，基于VOC数据集Annotations文件夹的xml格式文件，生成所需的txt文件，包括test.txt,train.txt.trainval.txt,val.txt,用于create_pascal_tf_record.py
+>> random_horizontal_flip.py: 对图片进行水平镜像处理，用于丰富测试数据
+> slim: 依赖库，ssd-mobilenet是基于tensorflow-slim实现的
 
 运行
 ---
