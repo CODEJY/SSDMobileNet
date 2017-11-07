@@ -20,6 +20,9 @@ SSD-MobileNet
 >> anchor_generators: 在多个cnn layer生成anchor  
 
 >> box_coders: 计算预测框的位置  
+  
+>> builders:  工具类文件夹  
+>>> model_builder_test.py: 测试运行环境是否配置正确
 
 >> checkpoints: 预训练模型的checkpoints，此模型基于coco数据集进行的fine-tune  
 
