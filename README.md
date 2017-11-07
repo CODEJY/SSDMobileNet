@@ -59,6 +59,10 @@ SSD-MobileNet
 
 >> random_horizontal_flip.py: 对图片进行水平镜像处理，用于丰富测试数据  
 
+>> Composite_Images: 合成图片，增加训练数据。取一张仅包含集装箱正面的图片，覆盖到一张包含复杂背景的图片的随机（合理）位置上  
+
+>> get_env_version: 获取当前环境的各依赖库的版本
+
 > slim: 依赖库，ssd-mobilenet是基于tensorflow-slim实现的
 
 运行
