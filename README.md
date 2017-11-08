@@ -70,28 +70,32 @@ SSD-MobileNet
 
 运行
 ---
-1. 在docker中运行项目，docker镜像文件已上传到docker hub，拉取方式：docker pull wujy1284/ssdmobilenet
-2. 在docker中`每次`开启新的terminal都必须在research目录下执行以下两条指令
+- 在docker中运行项目，docker镜像文件已上传到docker hub，拉取方式：docker pull wujy1284/ssdmobilenet
+- 在docker中`每次`开启新的terminal都必须在research目录下执行以下两条指令  
+
 ```
 	- protoc object_detection/protos/*.proto --python_out=.
 	- export PYTHONPATH=$PYTHONPATH:pwd:pwd/slim
-```
-3. 训练指令：
+``` 
+- 训练指令  
+
 ```
 python object_detection/train.py \
     --logtostderr \
     --pipeline_config_path=${PATH_TO_YOUR_PIPELINE_CONFIG} \
     --train_dir=${PATH_TO_TRAIN_DIR}
-```
-4. 评估指令：
+```  
+- 评估指令  
+
 ```
 python object_detection/eval.py \
     --logtostderr \
     --pipeline_config_path=${PATH_TO_YOUR_PIPELINE_CONFIG} \
     --checkpoint_dir=${PATH_TO_TRAIN_DIR} \
     --eval_dir=${PATH_TO_EVAL_DIR}
-```
-5. 生成.pb文件，执行export_inference_graph.py:
+```  
+- 生成.pb文件，执行export_inference_graph.py  
+
 ```
 python object_detection/export_inference_graph.py \
     --input_type image_tensor \
