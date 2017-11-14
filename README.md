@@ -48,9 +48,9 @@ SSD-MobileNet
 
 >> evaluator.py: 为eval.py提供工具，由eval.py调用  
 
->> export_inference_graph.py: 生成.pb文件,用于测试或移植客户端  
+>> export_inference_graph.py: 固化模型,生成.pb文件,用于测试或移植客户端  
 
->> export_model: 存储export_inference_graph.py生成的.pb文件  
+>> export_model: 存储export_inference_graph.py生成的.pb文件，即frozen_inference_graph.pb  
 
 >> exporter.py: 为export_inference_graph.py提供工具  
 
