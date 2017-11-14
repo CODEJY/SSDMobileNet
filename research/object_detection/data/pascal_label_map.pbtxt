@@ -1,5 +1,3 @@
-item {
-  id: 1
-  name: 'text'
-}
-
+version https://git-lfs.github.com/spec/v1
+oid sha256:91b04c631bacaf31f5f0d8f0cf359f57e273afa4c7ad8ef1cf18dd4bec4ace0e
+size 33
